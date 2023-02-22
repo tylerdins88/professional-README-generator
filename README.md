@@ -20,9 +20,7 @@ Once you have successfully installed the correct componenets you will be prompte
 
 ## Credits
 
-Node.js
-inquirer
-UCB Starter Code
+Node.js, inquirer, UCB Starter Code
 
 ## Contact Me
 
