@@ -4,7 +4,7 @@
 
 This program generates a readme.md file. Using node.js I ask questions via prompts in the terminal using the cmd line. Based off of the responses, a readme.md file is filled with the related information. See the following video here of how it works:
 
-VIDEO HERE
+[Video of Generated README](https://youtu.be/Hh0AuBuZjJA)
 
 I store the questions in an array. Each question is stored in an object. It is defined using a type, a message (the question), and a name. I first create a function that will use inquirer to prompt the questions. Then we will pass the responses or answers into a function to write the file. This function will pass the answers into a generate markdown javascript file. We take this information and use it to create the file. It will console log for use if it is suscessful. You can view this all below. 
 
@@ -20,7 +20,7 @@ Once you have successfully installed the correct componenets you will be prompte
 
 ## Test
 
-There is a professional-README.md file listed under the assets. This is and example file that was created using the application. 
+There is a professional-README.md file listed under the javascript folder in the assets sections. This is and example file that was created using the application. 
 
 ## Credits
 
