@@ -32,23 +32,23 @@ function renderLicenseInfo(license) {
 
 function generateMarkdown(data) {
   return `
-  
-  ${renderLicenseInfo(data.license)}
-  
+
   # ${data.title}
   
+  ${renderLicenseInfo(data.license)}
+
   ## Description
   ${data.description}
 
   ## Table of Contents
   ${data.contents}
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Useage](#useage)
-  - [License](#license)
-  - [Contribute](#contribute)
-  - [Test](#test)
-  - [Questions](#questions)
+  [Description](#description)
+  [Installation](#installation)
+  [Useage](#useage)
+  [License](#license)
+  [Contribute](#contribute)
+  [Test](#test)
+  [Questions](#questions)
 
   ## Installation
   ${data.installation}
