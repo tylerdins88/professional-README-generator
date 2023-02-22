@@ -19,7 +19,7 @@ const questions = [
         type: "input",
         message: "Would you like a table of contents for the README.md?",
         name: "contents"
-    }
+    },
     {
         type: "input",
         message: "What are the installation instructions?",
@@ -56,12 +56,12 @@ const questions = [
         type: "input",
         message: "What is your email address?",
         name: "email"
-    },
+    }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fileName = generate(data);
+function writeToFile(fileName, answers) {
+    fileName = generate(answers);
 
     fs.writeFile("professional-README.md", fileName, (err) =>
         err ? console.log(err) : console.log("professional-README sucessfully generated!")
