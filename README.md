@@ -6,9 +6,9 @@ This program generates a readme.md file. Using node.js I ask questions via promp
 
 VIDEO HERE
 
-I store the questions in an array. Each question is called using a required file. If you notice, I use a list type for the licenses to have the user select which licenses to include. See the photo below that shows these choices & type:
+I store the questions in an array. Each question is stored in an object. It is defined using a type, a message (the question), and a name. I first create a function that will use inquirer to prompt the questions. Then we will pass the responses or answers into a function to write the file. This function will pass the answers into a generate markdown javascript file. We take this information and use it to create the file. It will console log for use if it is suscessful. You can view this all below. 
 
-SCREENSHOT HERE
+![Screenshot](./assets/media/write-readme-file.png)
 
 ## Installation
 
@@ -16,7 +16,7 @@ Install npm via "npm init". Following this, you will need to install inquirer en
 
 ## Usage 
 
-Once you have successfully installed the correct componenets you will be prompted with the series of questions when entering "node index". You must be in the correct file for this to work. Once the prompts have been completed, the "generated-readme.md" file will be created. 
+Once you have successfully installed the correct componenets you will be prompted with the series of questions when entering "node index". You must be in the correct file for this to work. Once the prompts have been completed, the "professional-README.md" file will be created. 
 
 ## Credits
 

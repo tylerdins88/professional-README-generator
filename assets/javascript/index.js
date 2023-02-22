@@ -13,11 +13,6 @@ const questions = [
         message: "What would you like the description to say?",
         name: "description"
     },
-    // {
-    //     type: "input",
-    //     message: "Would you like a table of contents for the README.md?",
-    //     name: "contents"
-    // },
     {
         type: "input",
         message: "What are the installation instructions?",
