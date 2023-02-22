@@ -20,7 +20,7 @@ Once you have successfully installed the correct componenets you will be prompte
 
 ## Test
 
-There is a sampleREADME.md file listed under the assets. This is and example file that was created using the application. 
+There is a professional-README.md file listed under the assets. This is and example file that was created using the application. 
 
 ## Credits
 
