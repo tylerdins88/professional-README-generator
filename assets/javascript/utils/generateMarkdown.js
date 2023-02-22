@@ -1,4 +1,4 @@
-const license = [
+const licenseArray = [
   "Apache 2.0", "GNU v3.0", "MIT", "BSD 2-Clause", "Boost Software 1.0", "Creative Commons Zero v1",
   "Eclipse Public License", "BSD 3-New", "GNU Affero", "GNU General", "GNU Lesser", "Mozilla", "The Unlicense"
 ]
@@ -19,23 +19,58 @@ const licenseBadge = [
   "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
 ]
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseInfo(license) {
+  if (!license) {
+    return "";
+  } else if (licenseArray.includes(license)) {
+    let info = licenseArray.indexOf(license);
+    return licenseBadge[info];
+  } else {
+    return "License Not Found"
+  }
+}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  
+  ${renderLicenseInfo(data.license)}
+  
+  # ${data.title}
+  
+  ## Description
+  ${data.description}
 
-`;
+  ## Table of Contents
+  ${data.contents}
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Useage](#useage)
+  - [License](#license)
+  - [Contribute](#contribute)
+  - [Test](#test)
+  - [Questions](#questions)
+
+  ## Installation
+  ${data.installation}
+
+  ## Useage
+  ${data.useage}
+
+  ## License
+  ${data.license}
+
+  ## Contribution
+  ${data.contribution}
+
+  ## Test
+  ${data.test}
+
+  ## Questions
+  Github Repo: [!${data.github}](https://github.com/${data.github}?tab=repositories)
+
+  Reachout here for questions;
+  Email: ${data.email}
+  `;
 }
 
 module.exports = generateMarkdown;
