@@ -8,7 +8,7 @@ This program generates a readme.md file. Using node.js I ask questions via promp
 
 I store the questions in an array. Each question is stored in an object. It is defined using a type, a message (the question), and a name. I first create a function that will use inquirer to prompt the questions. Then we will pass the responses or answers into a function to write the file. This function will pass the answers into a generate markdown javascript file. We take this information and use it to create the file. It will console log for use if it is suscessful. You can view this all below. 
 
-![Screenshot](./assets/media/write-readme-file.png)
+![Screenshot](./images/write-readme-file.png)
 
 ## Installation
 

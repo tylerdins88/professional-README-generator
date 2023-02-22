@@ -5,7 +5,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  used to create a file.
+  Used to create a file.
 
   ## Table of Contents
 
@@ -26,7 +26,7 @@
   npm i
 
   ## Useage
-  uses node.js
+  Uses node.js
 
   ## License
   MIT
@@ -38,7 +38,7 @@
   node index
 
   ## Questions
-  Github Repo: [!thankyou](https://github.com/thankyou?tab=repositories)
+  Github Repo: [thankyou](https://github.com/thankyou?tab=repositories)
 
   Email: write@gmail.com
   
