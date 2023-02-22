@@ -18,6 +18,10 @@ Install npm via "npm init". Following this, you will need to install inquirer en
 
 Once you have successfully installed the correct componenets you will be prompted with the series of questions when entering "node index". You must be in the correct file for this to work. Once the prompts have been completed, the "professional-README.md" file will be created. 
 
+## Test
+
+There is a sampleREADME.md file listed under the assets. This is and example file that was created using the application. 
+
 ## Credits
 
 Node.js, inquirer, UCB Starter Code
