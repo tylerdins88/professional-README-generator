@@ -1,7 +1,9 @@
+// Node library packages required for application.
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generate = require("./utils/generateMarkdown.js");
 
+// Array containing questions for application.
 const questions = [
     {
         type: "input",
@@ -52,14 +54,16 @@ const questions = [
     }
 ];
 
+// Function to write file with input answers from users. 
 function writeToFile(fileName, answers) {
     fileName = generate(answers);
-
+    // Function with ternary operator to console log an error or success. 
     fs.writeFile("professional-README.md", fileName, (err) =>
         err ? console.log(err) : console.log("professional-README sucessfully generated!")
     );
 }
 
+// Function that captures users input in the command line. 
 function init() {
     inquirer
         .prompt(questions)
@@ -69,4 +73,5 @@ function init() {
         })
 }
 
+// Starts the application. 
 init();

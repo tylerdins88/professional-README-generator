@@ -1,8 +1,10 @@
+// This is my array that holds my Licenses.
 const licenseArray = [
   "Apache 2.0", "GNU v3.0", "MIT", "BSD 2-Clause", "Boost Software 1.0", "Creative Commons Zero v1",
   "Eclipse Public License", "BSD 3-New", "GNU Affero", "GNU General", "GNU Lesser", "Mozilla", "The Unlicense"
 ]
 
+// This is my arrary that holds my License badge information. 
 const licenseBadge = [
   "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
   "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
@@ -19,6 +21,7 @@ const licenseBadge = [
   "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
 ]
 
+// Attaches bade to selected License. 
 function renderLicenseInfo(license) {
   if (!license) {
     return "";
@@ -30,6 +33,7 @@ function renderLicenseInfo(license) {
   }
 }
 
+// Generates the file with this layout. 
 function generateMarkdown(data) {
   return `
 
@@ -71,4 +75,5 @@ function generateMarkdown(data) {
   `;
 }
 
+// Export the file 
 module.exports = generateMarkdown;
